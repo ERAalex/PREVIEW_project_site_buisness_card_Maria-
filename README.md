@@ -1,5 +1,6 @@
 
-
+[code:]html[:code]&lt;a href="mailto:name@email.com"&gt;Link text&lt;/a&gt;
+[/code]
 
 # Commercial project - business card website.
 
