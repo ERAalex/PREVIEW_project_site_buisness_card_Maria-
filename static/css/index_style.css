@@ -1,0 +1,5 @@
+.gallery.style2 article .image img {
+display: block;
+width: 80%;
+border-radius: 0;
+}
