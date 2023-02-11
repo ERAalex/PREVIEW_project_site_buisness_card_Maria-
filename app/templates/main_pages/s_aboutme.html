@@ -1,0 +1,308 @@
+{% extends 'index.html' %}
+
+{% block title %}Обо мне{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="static/assets/css/def_styles_pages.css">
+{% endblock%}
+
+
+{% block content %}
+
+<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+
+    <div class="content">
+
+        {% for item in list_art1 %}
+            <a class="major"><h1>Обо мне:</h1></a>
+
+            <p class="major">  Не перестаю учиться: регулярно прохожу курсы повышения квалификации, сдаю международные
+                экзамены, смотрю/читаю/слушаю на английском языке. На уроках использую современные
+                онлайн технологии (в том числе он-лайн доску Miro). </p>
+            <ul class="actions stacked">
+                <li><a href="{{ url_for('index') }}" class="button big wide smooth-scroll-middle">На главную</a></li>
+            </ul>
+        {% endfor %}
+    </div>
+
+    {% for item in list_img_about_me %}
+    <div class="image">
+        <img src="{{item[4] }}" alt="" />
+    </div>
+    {% endfor %}
+
+</section>
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <h3>Помогаю взрослым и подросткам, которые:</h3>
+        <p align="justify">
+        - Начинают/продолжают учить английский (уровни от A1 до С1)
+<br>- Работают с бизнес-английским (Business English)
+<br>- Планируют сдавать международные экзамены (IELTS)<br>
+        <br>
+Опыт работы:<br>
+
+- Во время учебы в ВУЗе работала на Петербургском Международном Экономическом Форуме (2008, 2009)
+<br>- ГБОУ школа № 279, учитель английского языка (2010 – 2013)
+<br>- Работала гидом-переводчиком с английским языком в своем родном городе Санкт-Петербурге (сезоны 2015 - 2016)
+<br>- Санкт-Петербургский университет ГПС МЧС России, учитель английского языка (2014-2015)
+<br>- Частные занятия с 2012<br>
+<br>
+Образование:
+
+<br>- Российский Государственный Педагогический Университет им. А.И.Герцена, бакалавр по направлению «Филологическое образование (2006 – 2010)
+<br>- Российский Государственный Педагогический Университет им. А.И.Герцена, магистр по направлению «Филологическое образование (2010-2012)
+<br>- Российский Государственный Педагогический Университет им. А.И.Герцена, аспирантура, кафедра английской филологии (2012-2015)
+<br>- Курсы гидов-переводчиков по Санкт-Петербургу и пригородам, «Городской центр ХХI век» (2015-2016)
+        </p>
+
+    </div>
+
+</section>
+
+
+						<!-- Gallery -->
+
+							<div class="gallery style2 medium lightbox onscroll-fade-in img_data">
+
+								<!-- art1 -->
+								<article>
+									{% for item in list_img1 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art2 -->
+								<article>
+									{% for item in list_img2 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art3 -->
+								<article>
+									{% for item in list_img3 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art4 -->
+								<article>
+									{% for item in list_img4 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art4_1 -->
+								<article>
+									{% for item in list_img4_1 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art4_2 -->
+								<article>
+									{% for item in list_img4_2 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art5 -->
+								<article>
+									{% for item in list_img5 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art6 -->
+								<article>
+									{% for item in list_img6 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art6 -->
+								<article>
+									{% for item in list_img6_1 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art6 -->
+								<article>
+									{% for item in list_img6_2 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+
+								<!-- art7 -->
+								<article>
+									{% for item in list_img7 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art8 -->
+								<article>
+									{% for item in list_img8 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+
+								<!-- art9 -->
+								<article>
+									{% for item in list_img9 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+
+									<div class="caption">
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+							</div>
+
+
+
+{% endblock %}

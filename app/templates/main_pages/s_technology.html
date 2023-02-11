@@ -1,0 +1,130 @@
+{% extends 'index.html' %}
+
+{% block title %}Технологии{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="static/assets/css/def_styles_pages.css">
+{% endblock%}
+
+
+{% block content %}
+
+<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+
+    <div class="content">
+		<a class="major"><h1>Современные технологии:</h1></a>
+
+		<p class="major">  В качестве общего виртуального пространства для работы со студентами
+			во время онлайн занятия я использую:  Miro — это быстрая, бесплатная и простая в использовании
+			онлайн-доска, на которой можно работать вместе, с любого устройства с доступом в интернет,
+			в любое время и где бы вы ни находились. </p>
+		<ul class="actions stacked">
+			<li><a href="{{ url_for('index') }}" class="button big wide smooth-scroll-middle">На главную</a></li>
+		</ul>
+    </div>
+
+    {% for item in banner_4 %}
+		<div class="image">
+			<img src="{{item[4] }}" alt="" />
+		</div>
+    {% endfor %}
+
+</section>
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <h3>Современная он-лайн доска MIRO:</h3>
+
+			<div class="image">
+				{% for item in banner_1 %}
+				<img src="{{item[4] }}" alt="" />
+				{% endfor %}
+			</div>
+		<br><br><br><br><br><br><br>
+
+
+    </div>
+</section>
+
+						<!-- Gallery -->
+
+							<div class="gallery style2 medium lightbox onscroll-fade-in img_data">
+
+								<!-- art1 -->
+								<article>
+									{% for item in banner_2 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>{{ item[1]}}</h3>
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art2 -->
+								<article>
+									{% for item in banner_3 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>{{ item[1]}}</h3>
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art3 -->
+								<article>
+									{% for item in banner_4_1 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>{{ item[1]}}</h3>
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art4 -->
+								<article>
+									{% for item in banner_5 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>{{ item[1]}}</h3>
+										<p>{{ item[2]}}</p>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+
+							</div>
+
+
+
+{% endblock %}

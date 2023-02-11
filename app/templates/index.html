@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<!--
+ERA_Alex  eraspb@mail.ru
+-->
+<html>
+	<head>
+		<title>{% block title %} Maria {% endblock %}</title>
+		<meta charset="utf-8" />
+		<meta name="" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/index_style.css" />
+		<link href="static/assets/css/bootstrap.min.css" rel="stylesheet"> <!--чисто-->
+		<link rel="stylesheet" href="static/assets/css/main.css" /> <!--чисто 18:08-->
+		<link rel="stylesheet" href="static/css/box_index.css" />
+
+		{% block style %} {% endblock%}
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+				<!-- One -->
+					<section>
+						<div class="hamburger-menu">
+						  	<input id="menu__toggle" type="checkbox" />
+						  	<label class="menu__btn" for="menu__toggle">
+								<span></span>
+						  	</label>
+						  	<ul class="menu__box">
+								<li><a class="menu__item" href="{{ url_for('index') }}">Главная</a></li>
+								<li><a class="menu__item" href="{{ url_for('about_me') }}">Обо мне</a></li>
+								<li><a class="menu__item" href="{{ url_for('technology') }}">Технологии</a></li>
+								<li><a class="menu__item" href="{{ url_for('books') }}">Учебные пособия</a></li>
+								<li><a class="menu__item" href="#contact_ancle">Контакты</a></li>
+						  	</ul>
+						</div>
+					</section>
+
+
+
+							<!-- Первая запись position1-->
+
+					<section class="menu_top_ind">
+						<div class="menu_top_ind_2">
+							<h2>Espinosa Rozova Maria</h2>
+						</div>
+					</section>
+
+
+
+					{% block content %}
+
+
+
+					<section class="banner style1 orient-left content-align-left image-position-right
+					fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+
+							{% for item in list_art1 %}
+							<a class="major"><h1>{{ item[2] }}</h1></a>
+
+							<p class="major"> {{ item[3] }}  </p>
+
+							{% endfor %}
+
+						</div>
+
+						{% for item in list_ban1 %}
+						<div class="image">
+							<img src="{{item[4] }}" alt="" />
+						</div>
+						{% endfor %}
+
+					</section>
+							<!-- Первая запись position1-->
+
+
+				<!-- Two -->
+				<!-- Вторая запись position2 -->
+
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+
+
+							{% for item in list_art2 %}
+							<h2>{{ item[2] }}</h2>
+							<p>{{ item[3] }}</p>
+							<ul class="actions stacked">
+								<li><a href="{{ url_for('about_me') }}" class="button big wide smooth-scroll-middle">Обо мне</a></li>
+							</ul>
+							{% endfor %}
+
+						</div>
+						{% for item in list_ban2 %}
+						<div class="image">
+							<img src="{{item[4] }}" alt="" />
+						</div>
+						{% endfor %}
+					</section>
+
+					<!-- Вторая запись position2 -->
+
+
+
+				<!-- Three -->
+				<!-- Третья запись position3 -->
+
+
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+
+							{% for item in list_art3 %}
+
+							<h2>{{ item[2] }}</h2>
+							<p>{{ item[3] }}</p>
+							<ul class="actions stacked">
+								<li><a href="{{ url_for('technology') }}" class="button">Технологии</a></li>
+							</ul>
+							{% endfor %}
+
+
+						</div>
+
+						{% for item in list_ban3 %}
+						<div class="image">
+							<img src="{{item[4]}}" alt="" />
+						</div>
+						{% endfor %}
+					</section>
+
+
+
+				<!-- Four -->
+				<!-- Четвертая запись position4 -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+
+							{% for item in list_art4 %}
+							<h2>{{ item[2] }}</h2>
+							<p>{{ item[3] }}</p>
+							<ul class="actions stacked">
+								<li><a href="{{ url_for('books') }}" class="button">Печатные издания</a></li>
+							</ul>
+
+							{% endfor %}
+
+						</div>
+
+						{% for item in list_ban4 %}
+						<div class="image">
+							<img src="{{item[4] }}" alt="" />
+						</div>
+						{% endfor %}
+
+					</section>
+
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+
+							{% for item in list_art5 %}
+							<h2>{{ item[2] }}</h2>
+							<p>{{ item[3]|safe }}</p>
+
+							{% endfor %}
+
+						</div>
+
+
+						<!-- Gallery -->
+
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+
+								<article>
+									{% for item in list_img1 %}
+										<img src="{{item[4] }}" alt="" />
+
+									<div class="caption">
+										<h3>{{ item[2]}}</h3>
+										<p>{{ item[3]}}</p>
+										<ul class="actions fixed">
+											<a href= "https://www.nationalgeographic.co.uk/travel" target="_blank">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<article>
+									{% for item in list_img2 %}
+										<img src="{{item[4] }}" alt="" />
+
+									<div class="caption">
+										<h3>{{ item[2]}}</h3>
+										<p>{{ item[3]}}</p>
+										<ul class="actions fixed">
+											<a href= "https://www.fluentu.com/blog/
+											business-english/importance-of-english-in-business/" target="_blank">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+
+								</article>
+
+								<article>
+									{% for item in list_img3 %}
+										<img src="{{item[4] }}" alt="" />
+
+									<div class="caption">
+										<h3>{{ item[2]}}</h3>
+										<p>{{ item[3]}}</p>
+										<ul class="actions fixed">
+											<a href= "https://www.amazon.com/Prime-Video/b?node=2676882011"
+											   target="_blank">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<article>
+									{% for item in list_img4 %}
+										<img src="{{item[4] }}" alt="" />
+
+									<div class="caption">
+										<h3>{{ item[2]}}</h3>
+										<p>{{ item[3]}}</p>
+										<ul class="actions fixed">
+											<a href= "https://academicpositions.com/career-advice/
+											a-guide-to-english-proficiency-tests#:~:text=Here%20is%20an%20overview%20of
+											,the%20CAE%2C%20and%20the%20CPE.&text=The%20Test%20of%20English%20as
+											,commonly%20used%20English%20proficiency%20test." target="_blank">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<article>
+									{% for item in list_img5 %}
+										<img src="{{item[4] }}" alt="" />
+
+									<div class="caption">
+										<h3>{{ item[2]}}</h3>
+										<p>{{ item[3]}}</p>
+										<ul class="actions fixed">
+											<a href= "https://www.nationalgeographic.co.uk/history-and-civilisation"
+											   target="_blank">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+							</div>
+
+					</section>
+
+
+					{% endblock %}
+
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Социальные сети</h2>
+							<p>Обязательно подпишитесь в моих социальных сетях</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<a href="https://t.me/Maria_Espinosa_Rozova" target="_blank">
+										<span class="icon brands style2 major fa-telegram"></span></a>
+									<h3><a href="https://t.me/Maria_Espinosa_Rozova" target="_blank" >Telegram</a></h3>
+									<p></p>
+								</section>
+								<section>
+									<a href="https://wa.me/79119841461" target="_blank">
+										<span class="icon brands style2 major fa-whatsapp"></span></a>
+									<h3><a href="https://wa.me/79119841461" target="_blank" >WhatsApp</a></h3>
+									<p></p>
+								</section>
+								<section>
+									<a href="https://profi.ru/profile/EspinosaRM/?ysclid=lc7re4bgzv571515945" target="_blank">
+<!--										<span class="fab fa-vk"></span>>-->
+										<span class="icon solid style2 major fa-house-user"></span></a>
+									<h3><a href="https://profi.ru/profile/EspinosaRM/?ysclid=lc7re4bgzv571515945" target="_blank" >Profi.ru</a></h3>
+									<p></p>
+								</section>
+
+
+							</div>
+						</div>
+					</section>
+
+				<!-- Seven -->
+
+					<section class="wrapper style1 align-center">
+
+						<div class="inner medium">
+
+								{% with messages = get_flashed_messages()  %}
+								{% if messages %}
+								{% for message in messages %}
+								<div class="alert alert-success alert-dismissible fade show" role="alert">
+								  {{ message }}
+								</div>
+								{% endfor %}
+								{% endif %}
+								{% endwith %}
+
+							<p><a name="contact_ancle"></a></p>
+							<h2>Хотите записаться на урок? Напишите мне</h2>
+
+
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Ваше Имя</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Кратко о себе, цели</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit"  value="Отправить" /></li>
+
+								</ul>
+
+								<ul class="actions stacked">
+								<li><a href="https://t.me/Maria_Espinosa_Rozova"
+									   class="button big wide smooth-scroll-middle" target="_blank">
+									Написать в телеграм</a></li>
+								</ul>
+
+							</form>
+
+
+
+
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+							<!-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
+								<li><a href="https://t.me/Maria_Espinosa_Rozova" target="_blank" class="icon brands style2 fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://wa.me/79119841461" target="_blank" class="icon brands style2 fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								<!-- <li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+								<li><a href="skype:moonana_3?userinfo" target="_blank" class="icon brands style2 fa-skype"><span class="label">Skype</span></a></li>
+							</ul>
+							<p><a>&copy; Design: E.R. Alex</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+				<script src="static/assets/js/main.js"></script> <!--запуск в 10:10 появилась реклама!-->
+<!--				<script src="static/assets/main2.js"></script> &lt;!&ndash;запуск в 10:10 появилась реклама!&ndash;&gt;-->
+
+			{% block script %}  {% endblock %}
+
+	</body>
+</html>

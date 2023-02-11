@@ -1,0 +1,129 @@
+{% extends 'index.html' %}
+
+{% block title %}Учебные пособия{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="static/assets/css/def_styles_pages.css">
+{% endblock%}
+
+
+{% block content %}
+
+<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+
+    <div class="content">
+
+            <a class="major"><h1>Учебные пособия</h1></a>
+
+            <p class="major">  Только последние издания лучших учебников от адептов коммуникативного подгода. </p>
+            <ul class="actions stacked">
+                <li><a href="{{ url_for('index') }}" class="button big wide smooth-scroll-middle">На главную</a></li>
+            </ul>
+    </div>
+
+    {% for item in maria_books_0 %}
+    <div class="image">
+        <img src="{{item[4] }}" alt="" />
+    </div>
+    {% endfor %}
+
+</section>
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <h3>Только лучшие английские издания</h3>
+        <p align="justify">
+        Попробовав огромное количество разных учебников,
+			для взрослых студентов как правило использую один из трех вариантов:
+			English File 4th edition, SpeakOut 2nd edition или Outcomes.
+<br>
+<br>
+Авторы этих серий учебников придерживаются популярного коммуникативного подхода, поэтому в комплекте много
+			разговорных упражнений, хорошая современная лексика и немного грамматики.
+			А также приятный дизайн и актуальные тексты.<br>
+		</p>
+
+    </div>
+
+</section>
+
+
+						<!-- Gallery -->
+
+							<div class="gallery style2 medium lightbox onscroll-fade-in img_data">
+
+								<!-- art1 -->
+								<article>
+									{% for item in maria_books_1 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>SpeakOut - разные уровни</h3>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art2 -->
+								<article>
+									{% for item in maria_books_2 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>English File - разные уровни</h3>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art3 -->
+								<article>
+									{% for item in maria_books_3 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>OUTCOMES - разные уровни</h3>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+								<!-- art4 -->
+								<article>
+									{% for item in maria_books_4 %}
+									<center><img src="{{item[4] }}" alt="" /></center>
+
+									<div class="caption">
+										<h3>Business Result - разные уровни</h3>
+										<ul class="actions fixed">
+											<a href= "{{item[5] }}" class="image">
+												<li><span class="button small">Details</span></li>
+											</a>
+										</ul>
+
+									</div>
+									{% endfor %}
+								</article>
+
+
+
+							</div>
+
+
+
+{% endblock %}

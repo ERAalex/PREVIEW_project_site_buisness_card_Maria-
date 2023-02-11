@@ -1,0 +1,64 @@
+version: "3.7"
+
+services:
+  app:
+    container_name: maria_flask_cont
+    image: maria_site_flask
+    environment:
+      - DATABASE_URL=postgresql://alex:nazca007@db_postgres:5432/maria
+    ports:
+      - 80:5000
+    depends_on:
+      - db_postgres
+
+  db_postgres:
+    container_name: alex_post
+    image: postgres
+    environment:
+      POSTGRES_DB: "maria"
+      POSTGRES_USER: "alex"
+      POSTGRES_PASSWORD: "nazca007"
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data/
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    container_name: pg_post
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "eraspb@mail.ru"
+      PGADMIN_DEFAULT_PASSWORD: "nazca007"
+    ports:
+      - "5555:80"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
