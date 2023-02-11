@@ -32,12 +32,13 @@ The following technologies have been implemented on the site:  <br>
 
 ## Technologies
 Main:<br/>
-[![SkillIcons](https://skillicons.dev/icons?i=python)](https://skillicons.dev) PYTHON <br/>
-- Flask<br/>
+[![SkillIcons](https://skillicons.dev/icons?i=python)](https://skillicons.dev) PYTHON - Flask <br/>
 
+DATABASES:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=mysql)](https://skillicons.dev) MySQL <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=postgres)](https://skillicons.dev) PostgreSQL <br/>
 
+Additional tech:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=git)](https://skillicons.dev) GIT <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=docker)](https://skillicons.dev) DOCKER <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=linux)](https://skillicons.dev) Linux <br/><br/>
