@@ -9,7 +9,9 @@
 </p>
 
 ## Attention 
-In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository. <img src="https://img.shields.io/badge/-Gmail%20contact%20me-red"> or <img src="https://img.shields.io/badge/-Telegram-blue">
+In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository: 
+<br><a href="erapyth@gmail.com"><img src="https://img.shields.io/badge/-Gmail%20contact%20me-red"></a>
+<br><a href="https://t.me/espinosa_python"><img src="https://img.shields.io/badge/-Telegram-blue"></a>
 
 ## About the project.
 
