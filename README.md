@@ -9,7 +9,7 @@
 </p>
 
 ## Attention 
-In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository.
+In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository. <a href="https://img.shields.io/static/v1?label=<LABEL>&message=<GMAIL contact me>&color=<red>"></a>
 
 ## About the project.
 
