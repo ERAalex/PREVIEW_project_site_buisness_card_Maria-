@@ -15,7 +15,8 @@
       <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
 
-I'm Espinosa Rozov Alexander. I am a novice developer. The main direction is Python development, a number of commercial orders have been completed. Can be viewed on the website .... Codding is my :heart: and i'm :coffee: lover. 
+The website was commissioned by a foreign language teacher. The task was to create a stylish and functional application. Flask was selected for creation. <br>
+The following technologies have been implemented on the site
 
 ## My stack
 Main:<br/>
