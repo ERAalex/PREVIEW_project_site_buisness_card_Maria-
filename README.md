@@ -1,6 +1,6 @@
 
-[code:]html[:code]&lt;a href="mailto:name@email.com"&gt;Link text&lt;/a&gt;
-[/code]
+[erapyth@gmail.com](mailto:erapyth@gmail.com)
+
 
 # Commercial project - business card website.
 
@@ -11,8 +11,8 @@
 
 ## Attention 
 In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository: 
-<tr><td>mailto:erapyth@gmail.com</td><td>e-mail recipient address</td></tr>
-<br><a href="erapyth@gmail.com"><img src="https://img.shields.io/badge/-Gmail%20contact%20me-red"></a>
+
+<br><a href="mailto:erapyth@gmail.com"><img src="https://img.shields.io/badge/-Gmail%20contact%20me-red"></a>
 <br><a href="https://t.me/espinosa_python"><img src="https://img.shields.io/badge/-Telegram-blue"></a>
 
 ## About the project.
