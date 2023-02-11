@@ -15,8 +15,14 @@
       <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
 
-The website was commissioned by a foreign language teacher. The task was to create a stylish and functional application. Flask was selected for creation. <br>
-The following technologies have been implemented on the site
+The website was commissioned by a foreign language teacher. The task was to create a stylish and functional application. Flask was selected for creation.
+The following technologies have been implemented on the site:  <br>
+- Stylish design and easy to use <br>
+- Сreating an administrator's office for the ability to change content (texts, pictures) by the customer himself, without contacting the programmer.
+- Gmail API to be able to write an email.
+- Loading the site on Reg.ru hosting and subsequent support.
+- Installing SSL-certificates.
+- Creating a copy of the site on a personal Ubuntu server with Docker / Docker Compose connection.
 
 ## My stack
 Main:<br/>
