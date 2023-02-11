@@ -51,11 +51,12 @@ Additional tech:<br/>
 1. <p><a href="https://itespinosa.com/" target="_blank">➡️ Check out my website. You can find a detailed description of the projects</a></p>
 2. <p><a href="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-">➡️ Сommercial project. Flask project. Foreign language teacher website. </a><a href="https://espinosamaria.ru/"> - See on-line website.</a></p>
 4. <p><a href="https://github.com/ERAalex/PREVIEW_project_Online_it_school">➡️ Сommercial project. Django project. Online School with personal classrooms of students and teachers.  </a><a href="https://edu.gym205.ru/"> - See online website.</a></p>
-5. <p><a href="http://school.gym205.ru/">➡️ Сommercial project. Django project. For goverment school № 205. </a><a href="http://school.gym205.ru/"> - See on-line website.</a></p>
+5. <p><a href="https://github.com/ERAalex/PREVIEW_project_205_kafedra_website">➡️ Сommercial project. Django project. For goverment school № 205. </a><a href="http://school.gym205.ru/"> - See on-line website.</a></p>
 6. <p><a href="https://github.com/ERAalex/project_Web_Site_Mobiles">➡️ Django project Mobile shop, education purpose. Working on it</a></p>
 7. <p><a href="https://github.com/ERAalex/Netology_Collective_work">➡️ Collective work. Education purpose. VK-bot</a></p>
 8. <p><a href="#">➡️ Control pass, education purpose. Working on it</a></p>
 9. <p><a href="https://telegram.me/simon_esp_bot">➡️ Online-school. Telegram Bot (aiogram). Done. You can see it on Telegram @simon_esp_bot. To start print /start and /menu</a></p>
+
 
 
 
