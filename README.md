@@ -12,7 +12,7 @@
 
 <p><a href="https://espinosamaria.ru/" target="_blank">➡️ Check out this website</a></p>
   <a href="#" target="_blank" rel="noreferrer nofollow">
-      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" alt="Buy Me A Coffee" height="40" width="170" >
+      <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
 
 I'm Espinosa Rozov Alexander. I am a novice developer. The main direction is Python development, a number of commercial orders have been completed. Can be viewed on the website .... Codding is my :heart: and i'm :coffee: lover. 
