@@ -1,6 +1,4 @@
 
-[erapyth@gmail.com](mailto:erapyth@gmail.com)
-
 
 # Commercial project - business card website.
 
