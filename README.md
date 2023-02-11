@@ -8,9 +8,12 @@
   <a href="https://www.linkedin.com/in/alexander-espinosa-rozov-b3b270121/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"></a>
 </p>
 
-## About me
+## Attention 
+In this github repository is only part of a commercial project, if you are an employer and want to see the whole project, write to me and I will provide access to a private repository.
 
-<p><a href="https://espinosamaria.ru/" target="_blank">➡️ Check out this website</a></p>
+## About the project.
+
+<p><a href="https://espinosamaria.ru/" target="_blank">➡️ Check out my work - website</a></p>
   <a href="#" target="_blank" rel="noreferrer nofollow">
       <img src="https://github.com/ERAalex/PREVIEW_project_site_buisness_card_Maria-/blob/main/website_icons.jpg" >
     </a>
@@ -24,15 +27,13 @@ The following technologies have been implemented on the site:  <br>
 - Installing SSL-certificates.
 - Creating a copy of the site on a personal Ubuntu server with Docker / Docker Compose connection.
 
-## My stack
+## Technologies
 Main:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=python)](https://skillicons.dev) PYTHON <br/>
-- Django REST FRAMEWORK<br/>
 - Flask<br/>
 
 [![SkillIcons](https://skillicons.dev/icons?i=mysql)](https://skillicons.dev) MySQL <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=postgres)](https://skillicons.dev) PostgreSQL <br/>
-[![SkillIcons](https://skillicons.dev/icons?i=mongodb)](https://skillicons.dev) MongoDB <br/><br/>
 
 [![SkillIcons](https://skillicons.dev/icons?i=git)](https://skillicons.dev) GIT <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=docker)](https://skillicons.dev) DOCKER <br/>
@@ -41,7 +42,7 @@ Main:<br/>
 [![SkillIcons](https://skillicons.dev/icons?i=html)](https://skillicons.dev) HTML <br/>
 [![SkillIcons](https://skillicons.dev/icons?i=css)](https://skillicons.dev) CSS <br/>
 
-## The most important projects:
+## Other important projects:
 1. <p><a href="https://itespinosa.com/" target="_blank">➡️ Check out my website. You can find a detailed description of the projects</a></p>
 2. <p><a href="https://espinosamaria.ru/">➡️ Flask project for foreign language teacher. Сommercial project</a></p>
 4. <p><a href="https://edu.gym205.ru/">➡️ Django Big project. Online School with personal classrooms of students and teachers. Сommercial project</a></p>
